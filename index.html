@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Encriptador Challenge ONE Sprint 01</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="./images/logo.png" alt="Logo Alura.png" />
+        </header>
+        <main>
+            <section class="box-input">
+                <textarea
+                    id="text-input"
+                    cols="30"
+                    rows="10"
+                    type="text"
+                    placeholder="Ingrese el texto aquí"
+                ></textarea>
+                <div id="alert-msj">
+                    <span class="material-symbols-outlined">error</span>
+                    <h6>Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="btn-input">
+                    <button class="btn-encrypt">Encriptar</button>
+                    <button class="btn-decrypt">Desencriptar</button>
+                </div>
+            </section>
+            <section class="box-out">
+                <div id="text-out">
+                    <div id="default-message">
+                        <img src="./images/muneco.png" alt="" />
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <p>
+                            Ingresa el texto que desees encriptar o
+                            desencriptar.
+                        </p>
+                    </div>
+                    <div id="text-decrypt"></div>
+                </div>
+                <button id="btn-copy">Copiar</button>
+            </section>
+        </main>
+    </body>
+</html>
